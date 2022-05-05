@@ -1,13 +1,15 @@
+"""
+Vim-rgb
+"""
 import traceback
 from threading import Thread
-
-import cuesdk
 import pynvim
-from cuesdk import CueSdk
-
 
 @pynvim.plugin
-class VimICUE(object):
+class VimRGB(object):
+    """
+    Vim RGB main class
+    """
     def __init__(self, nvim: pynvim.Nvim):
         # enable __nvim_print function
         self.allow_queue = False
@@ -22,7 +24,6 @@ class VimICUE(object):
         self.cached_layouts = {}
 
         # cuesdk default values
-        self.cue = CueSdk()
         self.nvim = nvim
         self.updater = Thread(target=self.layout_updater)
 

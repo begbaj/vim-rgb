@@ -1,0 +1,7 @@
+vim-rgb is a plugin that enables realtime updataes of the keyboard leds layout, so when you switch from,
+say, normal mode to insert mode, the keyboards leds layout changes as defined on the theme. Thus, OpenRGB.
+
+vim-rgb will only:
+1 - recognize the "vim mode"
+2 - change the leds layout as the "vim mode" changes, according to the theme selected.
+
